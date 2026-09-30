@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <title>Product Explorer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header class="header">
+
+        <div class="container">
+
+            <h1>Product Explorer</h1>
+
+            <p>
+                Find products closest to your target price
+            </p>
+
+        </div>
+
+    </header>
+
+
+    <!-- Main Content -->
+
+    <main class="container">
+
+        <!-- Price Finder -->
+
+        <section class="price-finder">
+
+            <h2>Smart Price Finder</h2>
+
+            <p class="description">
+                Enter a price and find products closest to it.
+            </p>
+
+
+            <div class="search-box">
+
+                <input
+                    type="number"
+                    id="priceInput"
+                    placeholder="Enter target price"
+                >
+
+                <button id="searchButton">
+                    Search
+                </button>
+
+            </div>
+
+
+            <p id="errorMessage" class="error"></p>
+
+        </section>
+
+
+        <!-- Results -->
+
+        <section class="results-section">
+
+            <div class="results-header">
+
+                <h2>Closest Products</h2>
+
+                <span id="resultCount"></span>
+
+            </div>
+
+
+            <div id="productContainer" class="product-grid">
+
+                <!-- Product cards will be added using JavaScript -->
+
+            </div>
+
+
+            <div id="emptyMessage" class="empty-message">
+
+                Enter a price above to find products.
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- JavaScript -->
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
